@@ -108,6 +108,7 @@ app.get("/api/health", (req, res) =>
 app.post("/api/login", (req, res) => {
   const { password } = req.body;
   const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "arpan900";
+  console.log(`Login Debug: Input='${password}', Expected='${ADMIN_PASSWORD}'`);
 
   if (password === ADMIN_PASSWORD) {
     const token = jwt.sign({ admin: true }, JWT_SECRET, { expiresIn: "24h" });
