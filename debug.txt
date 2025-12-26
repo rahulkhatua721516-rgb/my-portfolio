@@ -1,0 +1,4 @@
+--- Debug Start ---
+CWD: C:\Arpan File\myPortfolip
+Checking .env.local at: C:\Arpan File\myPortfolip\.env.local
+.env.local exists

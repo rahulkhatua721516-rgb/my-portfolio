@@ -1,0 +1,8 @@
+{
+  "name": "rahul of arapan Neon-Grain Design Portfolio",
+  "description": "A high-end, premium graphic design portfolio with a dark-grain texture and neon green accents, featuring a fully functional admin panel for content management.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
