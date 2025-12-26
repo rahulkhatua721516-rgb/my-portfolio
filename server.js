@@ -107,9 +107,7 @@ app.get("/api/health", (req, res) =>
 // Auth
 app.post("/api/login", (req, res) => {
   const { password } = req.body;
-  // HARDCODED FOR DEBUGGING
-  const ADMIN_PASSWORD = "12345"; 
-  console.log(`Login Debug: Input='${password}', Expected='${ADMIN_PASSWORD}'`);
+  const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "aritika511";
 
   if (password === ADMIN_PASSWORD) {
     const token = jwt.sign({ admin: true }, JWT_SECRET, { expiresIn: "24h" });
